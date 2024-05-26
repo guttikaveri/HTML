@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables in html</title>
+</head>
+<body>
+    <table></table>
+    <!-- inside table tag there will be th and tb -->
+    <!-- table=> tr=>th=>secondtr=>td -->
+    <table >
+        <!--  example<thead>
+            <thead>
+                <th>sr</th>
+                <th>name</th>
+                <th>rollno</th>
+                <th>stream</th>
+            </thead>
+        </thead>
+        <tbody>
+            <td>1</td>
+            <td> kaveri</td>
+            <td>100</td>
+            <td>mba</td>
+        </tbody>
+         </table> -->
+
+         <!-- cellspacing and cellpadding -->
+         <!--cellspacing- space will be take outside  or around the cell  -->
+         <!-- cellpadding- space willbe taken inside of cell -->
+
+         <center>
+
+         <table border="1" width="30%" cellspacing="5" cellpadding="15" >
+            <tr>
+                <th style="background-color: brown;">sr</th>
+                <th style="background-color: brown;">name</th>
+                <th style="background-color: brown;">rollno</th>
+                <th style="background-color: brown;">stream</th> 
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td> kaveri</td>
+                <td>100</td>
+                <td>mba</td> 
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td> anusha</td>
+                <td>101</td>
+                <td>ba</td> 
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td> lahari</td>
+                <td>102</td>
+                <td>btech</td>
+            </tr>
+                <tr>
+                    <td>4</td>
+                    <td> mukesh</td>
+                    <td>103</td>
+                    <td>cse</td> 
+                </tr> 
+                <tr>
+                    <td>5</td>
+                    <td> sowmya</td>
+                    <td>104</td>
+                    <td>btech</td> 
+                </tr>
+             </table>
+         </center> 
+
+         <!-- colspan and rowspan are used to increase the height and width of the cell -->
+         <table border="1" cellspacing="0">
+            <tr>
+                <th colspan="6">time table</th>
+            </tr>
+
+            <tr>
+                <th rowspan="6">hours </th>
+                <th>mon</th>
+                <th>tue</th>
+                <th>wed</th>
+                <th>thu</th>
+                <th>fri</th>
+                <th>sat</th>
+            </tr>
+            <tr>
+                <td>maths</td>
+                <td>science</td>
+                <td>maths</td>
+                <td>science</td>
+                <td>arts</td>
+            </tr>
+            <tr>
+                <td>maths</td>
+                <td>science</td>
+                <td>maths</td>
+                <td>science</td>
+                <td>arts</td>
+            </tr>
+            <tr><th colspan="15">lunch</th></tr>
+            <tr>
+            <td>maths</td>
+            <td>science</td>
+            <td>maths</td>
+            <td  rowspan="2" colspan="2">project</td>
+        </tr><tr>
+            <td>maths</td>
+            <td>science</td>
+            <td>maths</td>
+            
+        </tr>
+</table>
+
+   <table border="1">
+    <tr>
+        <th colspan="2">html table</th>
+
+    </tr>
+    <tr>
+        <td>cell 1</td>
+        <td align="center">cell 2</td>
+        <tr border="1">
+            <tr>
+                <th colspan="2">nested html table</th>
+
+            </tr>
+            <tr>
+                <td>cell 2.1</td>
+                <td>cell 2.2</td>
+            </tr>
+                <tr>
+
+                  <td>cell 2.3</td>
+                    <td>cell 2.4</td>
+                </tr>
+
+</tr>
+        </table>
+    
+   </table>
+
+
+    
+</body>
+</html>

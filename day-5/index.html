@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #heading{
+            color: blue;
+        }
+        .green{
+            color:white;
+            
+        }
+        .bg-blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+      <!-- id and class -->
+      <!-- id is unique and it apply one value it it should not be used anywhere in the same html file,but class is unique and not unique, we can apply multiple  values to class and same values can be applied to different-->
+      <!-- id can be identified by #pound and class can be identified by (.)dot -->
+      <h1 id="heading" class="grey"> welcome to forms</h1>
+
+
+      <p class="green bg-blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ratione accusantium deleniti soluta, consequatur inventore iure. Cupiditate totam voluptas recusandae accusamus aperiam commodi illum earum quaerat numquam quae, aut alias.</p>
+      <p class="green bg-blue"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam modi sed ipsam! Tempora quod blanditiis nesciunt quia sint, maiores iure minima, doloremque, sapiente accusamus totam recusandae quibusdam repellat quis asperiores.</p>
+    
+    <fieldset>
+        <legend> student information</legend>
+
+        <form id="formcontainer">
+
+                <label for="name">name</label>
+                <input type="text" name="input" id="name" placeholder="enter the name"><br> <br>
+            
+                <label for="dob">dob</label>
+                <input type="date" name="input" id="dob" ><br> <br>
+        
+
+                <label for="marks">marks</label>
+                <input type="number" name="input" id="marks"><br> <br>
+
+                <label for="gender">gender</label>
+                <select name="gender" id=" gender" >
+                    <option value=""> choose  an option</option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="other"> others</option>
+                </select> <br> <br>
+                <input type="submit" value="submit">
+
+
+    </form>
+</fieldset>
+
+                <div id=" revealcontainer">
+                    <h2> user information</h2>
+                </div>
+            
+<script>
+    document
+    .getElementById("formcontainer")
+    .addEventListener("submit", function(event){
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const dob = document.getElementById("dob").value;
+        const marks = document.getElementById("marks").value;
+        const gender = document.getElementById("gender").value;
+        
+    
+        const revealcontainer = document.getElementById("revealcontainer");
+
+
+        revealcontainer.innerHTML =
+       ` <h2>user information</h2>
+        <p> <strong >name: </strong> ${name}</p>
+        <p> <strong >dob: </strong> ${dob}</p>
+        <p> <strong >marks: </strong> ${marks}</p>
+        <p> <strong >gender: </strong> ${gender}</p>;
+        
+     
+        `
+    })
+</script>
+               
+            
+        </form>
+    </fieldset>
+</body>
+</html>
